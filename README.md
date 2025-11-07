@@ -1,8 +1,9 @@
 
 # Fastapi-mail
 
-The fastapi-mail is a simple lightweight mail system, for sending emails and attachments(individual && bulk)
+> **Note:** This is a fork that locks Pydantic to `<2.12` to ensure compatibility with SQLModel until [this issue](https://github.com/fastapi/sqlmodel/issues/1623) is resolved.
 
+The fastapi-mail is a simple lightweight mail system, for sending emails and attachments(individual && bulk)
 
 [![MIT licensed](https://img.shields.io/github/license/sabuhish/fastapi-mail)](https://raw.githubusercontent.com/sabuhish/fastapi-mail/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/sabuhish/fastapi-mail.svg)](https://github.com/sabuhish/fastapi-mail/stargazers)
@@ -10,9 +11,7 @@ The fastapi-mail is a simple lightweight mail system, for sending emails and att
 [![GitHub issues](https://img.shields.io/github/issues-raw/sabuhish/fastapi-mail)](https://github.com/sabuhish/fastapi-mail/issues)
 [![Downloads](https://pepy.tech/badge/fastapi-mail)](https://pepy.tech/project/fastapi-mail)
 
-
-###  🔨  Installation ###
-
+### 🔨  Installation ###
 
 ```bash
 python3 -m venv .venv
@@ -42,26 +41,24 @@ poetry add 'fastapi-mail[httpx]'
 ```
 
 ---
+
 **Documentation**: [FastApi-MAIL](https://sabuhish.github.io/fastapi-mail/)
 ---
 
-
 The key features are:
 
--  sending emails either with FastApi or using asyncio module 
--  sending emails using FastApi background task managment
--  sending files either from form-data or files from server
--  Using Jinja2 HTML Templates
--  **NameEmail support** - recipients can be specified as `"Name <email@domain.com>"` format
--  email utils (utility allows you to check temporary email addresses, you can block any email or domain)
--  email utils has two available classes ```DefaultChecker``` and  ```WhoIsXmlApi```
--  Unittests using FastapiMail
+- sending emails either with FastApi or using asyncio module
+- sending emails using FastApi background task managment
+- sending files either from form-data or files from server
+- Using Jinja2 HTML Templates
+- **NameEmail support** - recipients can be specified as `"Name <email@domain.com>"` format
+- email utils (utility allows you to check temporary email addresses, you can block any email or domain)
+- email utils has two available classes ```DefaultChecker``` and  ```WhoIsXmlApi```
+- Unittests using FastapiMail
 
 More information on [Getting-Started](https://sabuhish.github.io/fastapi-mail/getting-started/)
 
-
 ### Guide
-
 
 ```python
 
@@ -114,21 +111,19 @@ async def simple_send(email: EmailSchema) -> JSONResponse:
 
 ## List of Examples
 
-For more examples of using fastapi-mail please check: 
+For more examples of using fastapi-mail please check:
 [example](https://sabuhish.github.io/fastapi-mail/example/) section.
-
 
 ## Contributors ✨
 
 Thanks goes to these wonderful
 [People](https://github.com/sabuhish/fastapi-mail/blob/master/contributors.txt)
 
-
 # Contributing
+
 Contributions of any kind are welcome!
 
 Before you start, please read [CONTRIBUTING](https://github.com/sabuhish/fastapi-mail/blob/master/CONTRIBUTING.md)
-
 
 ## LICENSE
 
